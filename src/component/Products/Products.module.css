@@ -1,0 +1,10 @@
+.box>img{
+    height: 3rem;
+    width: 3rem;
+}
+.box{
+    height: 15rem;
+}
+.box>h4{
+    font-size: 1rem;
+}
