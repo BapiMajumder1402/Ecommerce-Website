@@ -6,13 +6,13 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-        add(state, action) {
+        // add(state, action) {
 
-            state.push(action.payload)
-        },
-        remove(state, action) {
-            return state.filter((item) => item.id !== action.payload)
-        },
+        //     state.push(action.payload)
+        // },
+        // remove(state, action) {
+        //     return state.filter((item) => item.id !== action.payload)
+        // },
         addItem(state, action) {
             const { id, title, price, image } = action.payload;
             const existingItem = state.find((item) => item.id === id);

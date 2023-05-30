@@ -8,7 +8,7 @@ function Cart() {
   const dispatch = useDispatch();
 
   const handleRemove = (id) => {
-    dispatch(remove(id));
+    // dispatch(remove(id));
     dispatch(removeItem(id));
   };
 
@@ -17,7 +17,7 @@ function Cart() {
       let totalPrice = 0;
 
       data.forEach((item) => {
-        totalPrice += item.price ;
+        totalPrice += item.price * item.quantity;
       });
 
       return totalPrice;
@@ -35,7 +35,7 @@ function Cart() {
             <img src={item.image} alt="" />
             <h5>{item.title}</h5>
             <h4>{item.price}</h4>
-            {/* <p>Quantity: {item.quantity}</p> */}
+            <p>Quantity: {item.quantity}</p>
             <button onClick={() => handleRemove(item.id)}>Remove</button>
           </div>
         ))}
@@ -46,7 +46,3 @@ function Cart() {
 }
 
 export default Cart;
-
-
-
-

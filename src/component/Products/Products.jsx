@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import pro from './Products.module.css'
-import { add } from '../../Redux/CartSlice';
+import { add, addItem } from '../../Redux/CartSlice';
 import { useDispatch , useSelector} from 'react-redux';
 import { STATUSES, fetchProducts } from '../../Redux/ProductsSlice';
 import { setStatus } from '../../Redux/ProductsSlice';
@@ -15,7 +15,7 @@ function Products() {
     }, []);
 
     function handleAdd(product){
-        dispatch(add(product))
+        dispatch(addItem(product))
     }
 
     if(status===STATUSES.LOADING){
