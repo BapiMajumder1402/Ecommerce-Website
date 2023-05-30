@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 
-const STATUSES=Object.freeze({///readonly object
+export const STATUSES=Object.freeze({///readonly object
     IDLE:"idle",
     ERROR:"error",
     LOADING:"loading...",
