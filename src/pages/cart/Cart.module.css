@@ -1,4 +1,48 @@
-.img>img{
-    height: 2rem;
+.container>img{
+    height: 5rem;
+    width: 5rem;
 
+}
+.empty{
+    display: block;
+    margin: auto;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outBox{
+    margin: 2rem;
+    padding: 2rem;
+    width: 50vw;
+    border: 2px solid #2cd4d9;
+    border-radius: 5px;
+}
+.container{
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    border-bottom: .5px solid #c7c5c5;
+}
+.sec{
+    width: 25%;
+}
+.container:hover{
+    background:#ebe7e7;
+}
+.qty{
+    display: flex;
+    gap: .5rem;
+}
+.qty>button{
+    border: 0;
+    outline: none;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
 }

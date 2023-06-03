@@ -4,6 +4,8 @@ import './App.css'
 import Home from './pages/home/Home'
 import Cart from './pages/cart/Cart'
 import Nav from './component/nav/Nav'
+import Products from './component/Products/Products'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
 
@@ -12,6 +14,7 @@ function App() {
       <Nav/>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/products' element={<Products />} />
         <Route path='/cart' element={<Cart />} />
       </Routes>
     </div>
