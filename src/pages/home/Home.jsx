@@ -34,7 +34,7 @@ function Home() {
           />
           <Carousel.Caption className="bg-white">
             <h5>100% Cotton Men Black Suits</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Flat 25% Off on BlueBerry & Reymond's Men's Jackets </p>
             <div className="mb-3">
               <Button variant="dark">Shop Now</Button>
             </div>
@@ -49,7 +49,7 @@ function Home() {
           />
           <Carousel.Caption className="bg-white">
             <h5>Decorate Your Smart Kitchen</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>Exciting Offers and Gifts are Free With Every Kitchen Appliances</p>
             <div className="mb-3">
               <Button variant="dark">Shop Now</Button>
             </div>

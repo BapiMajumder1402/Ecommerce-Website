@@ -7,7 +7,7 @@ function Nav() {
   const data =useSelector(state=>state.cart)
   return (
     <div className={nav.main}>
-        <div className={nav.left}>Shopping</div>
+        <div className={nav.left}><Link to="/">Shopping-Cart</Link></div>
         <div className={nav.right}>
             <Link to="/">Home</Link>
             <Link to="/products">Products</Link>
