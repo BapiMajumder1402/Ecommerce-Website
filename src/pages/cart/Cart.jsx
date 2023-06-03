@@ -59,10 +59,10 @@ function Cart() {
             ))}
           </div>
           <div className={cart.total}>
-          <p >Total Price: {total}</p>
-          <button>Checkout</button>
+            <p >Total Price: {total}</p>
+            <button>Checkout</button>
           </div>
-          
+
         </div> :
         <img src="https://whiteboardsdirect.com.au/wp-content/uploads/2019/12/Your-cart-is-empty.png" alt="" className={cart.empty} />
       }
