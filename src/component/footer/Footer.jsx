@@ -46,7 +46,7 @@ function Footer() {
             <a href="#"><FaInstagram /></a>
             <a href="#"><FaPinterest /></a>
           </div>
-          <p>&copy; 2023 Your Ecommerce Website. All rights reserved.</p>
+          <p>&copy; 2023 Shopping-Cart Website. All rights reserved.</p>
         </div>
       </div>
     </footer>
