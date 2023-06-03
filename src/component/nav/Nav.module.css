@@ -1,0 +1,37 @@
+.main{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    background-color: #5333ed ;
+    color:#ffffff ;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Righteous', cursive;
+}
+.right>a{
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    
+    gap: 1.5rem;
+}
+.left{
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+}
+.right{
+    display: flex;
+    gap: 1.5rem;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+}
+
+.right>span{
+    font-size: 1rem;
+}
+.right>span>a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+}

@@ -43,10 +43,10 @@ const cartSlice = createSlice({
                 }
             }
         },
-        removeAll(state, action) {
-            const id = action.payload;
-            return state.filter((item) => item.id !== id);
-        },
+        // removeAll(state, action) {
+        //     const id = action.payload;
+        //     return state.filter((item) => item.id !== id);
+        // },
     }
 })
 
