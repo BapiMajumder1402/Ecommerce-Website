@@ -50,8 +50,8 @@
 .total>button{
     
         display: inline-block;
-        padding: 12px 24px;
-        font-size: 16px;
+        padding: 1.1rem 1.5px;
+        font-size: 1.2rem;
         font-weight: bold;
         text-align: center;
         text-decoration: none;
@@ -76,4 +76,38 @@
     font-size: 1rem;
     font-weight: 500;
     font-family: 'Righteous', cursive;
+}
+
+@media (max-width: 421px){
+    .empty{
+        width: 15rem;
+
+    }
+    .main{
+        width: 98vw;
+    }
+    .outBox{
+        padding: .5rem;
+        width: 95%;
+        margin:.5rem;
+    }
+    .container{
+        width: 98%;
+    }
+    .container>h5{
+        font-size: 1rem;
+    }
+    .container>h4{
+        font-size: 1rem;
+    }
+    .container>img{
+        width: 4rem;
+    }
+    .total>button{
+        width: 5rem;
+        font-size: .8rem;
+    }
+    .total{
+        font-size: .8rem;
+    }
 }
