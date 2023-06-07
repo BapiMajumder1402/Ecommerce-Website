@@ -1,22 +1,54 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import navStyles from './Nav.module.css';
 import { useSelector } from 'react-redux'
-import nav from './Nav.module.css'
-import {RiShoppingCartFill} from 'react-icons/ri'
-function Nav() {
+import { RiMenuFoldFill, RiMenuUnfoldFill, RiCloseFill } from 'react-icons/ri';
+import {HiShoppingCart} from 'react-icons/hi'
+
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   const data =useSelector(state=>state.cart)
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className={nav.main}>
-        <div className={nav.left}><Link to="/">Shopping-Cart</Link></div>
-        <div className={nav.right}>
-            <Link to="/">Home</Link>
-            <Link to="/products">Products</Link>
-            <Link to="/cart">Cart</Link>
-            <span ><Link to="/cart"><RiShoppingCartFill/> </Link> {data.length}</span>
+    <nav className={navStyles.main}>
+        <div className={navStyles.left}>
+          <Link to="/">Shopping-Cart</Link>
         </div>
-      
-    </div>
-  )
+        <div className={`${navStyles.right} ${isOpen && navStyles.active}`}>
+          <Link to="/" className={navStyles.navLink}>
+            Home
+          </Link>
+          <Link to="/products" className={navStyles.navLink}>
+            Products
+          </Link>
+          <Link to="/cart" className={navStyles.navLink}>
+            Cart
+          </Link>
+          <Link to="/cart" id={navStyles.c} className={navStyles.navLink}>
+            <HiShoppingCart/> <span>{data.length}</span>
+          </Link>
+          
+        </div>
+        <div className={navStyles.navToggle}>
+        <Link to="/cart">
+            <HiShoppingCart/> <span>{data.length}</span>
+          </Link>
+          {!isOpen ? (
+            <button className={navStyles.menuButton} onClick={toggleMenu}>
+              <RiMenuFoldFill />
+            </button>
+          ) : (
+            <button className={navStyles.menuButton} onClick={toggleMenu}>
+              <RiCloseFill />
+            </button>
+          )}
+        
+      </div>
+    </nav>
+  );
 }
 
-export default Nav
+export default Navbar;

@@ -52,7 +52,13 @@
     
 }
 
-
+.sort{
+    padding: .8rem .1rem;
+    font-weight: 400;
+    margin: 1rem;
+    font-family: 'Righteous', cursive;
+    border-radius: 8px;
+}
 
 .select>select{
     padding: .5rem .8rem;
@@ -77,6 +83,14 @@
     color: #2cd4d9;
     z-index: 1000;
 }
+.search>input{
+    width: 11rem;
+    padding: .5rem .8rem;
+    font-weight:500;
+    margin: 1rem;
+    font-family: 'Righteous', cursive;
+    border-radius: 8px;
+}
 .add::before{
     content: "";
     position: absolute;
@@ -97,3 +111,10 @@
 .add:hover::before{
     transform: scaleX(1)
 }
+@media(max-width:421px){
+    .main{
+        display: block;
+    }
+    .box{
+        margin: .5rem;}
+    }
